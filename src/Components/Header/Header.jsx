@@ -1,4 +1,7 @@
-function Nav() {
+import React from "react";
+import "./header.css";
+
+function Header() {
   return (
     <header>
       <h1>Fullmetal Alchemist</h1>
@@ -11,4 +14,4 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default Header;

@@ -16,7 +16,6 @@
   min-height: 250px;
   width: 200px;
   margin-top: 10px;
-  border: 3px solid black;
   border-radius: 5px;
   margin: 10px;
 }
@@ -31,11 +30,15 @@
 .card h3 {
   font-size: 30px;
   color: white;
+  margin: 0%;
+  padding: 0%;
 }
 
 .card h4 {
   font-size: 20px;
   color: white;
+  margin: 0%;
+  padding: 0%;
 }
 
 .card-titles {
@@ -45,4 +48,12 @@
   z-index: 1;
   word-wrap: break-word;
   width: 200px;
+}
+
+.card.light {
+  border: 3px solid grey;
+}
+
+.card.dark {
+  border: 3px solid black;
 }

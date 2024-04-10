@@ -36,9 +36,11 @@ th {
 
 tr.dark {
   background-color: #dddddde1;
+  border: 0;
 }
 tr.light {
   background-color: #ffffffe1;
+  border: 0;
 }
 
 th {
