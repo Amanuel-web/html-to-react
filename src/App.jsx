@@ -1,8 +1,8 @@
-import "./App.css";
+import "./reset.css";
 import React from "react";
 import Header from "./Components/Header/Header";
 import CharacterRating from "./Components/CharacterRating/CharacterRating";
-import { data } from "./Components/Header/fma-data";
+import { data } from "./constant/fma-data";
 import CharacterCards from "./Components/CharacterCards/CharacterCards";
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <>
       <Header />
       <CharacterRating cardItems={data} />
-      <CharacterCards cardItems={data} />
+      <CharacterCards data={data} />
     </>
   );
 }
