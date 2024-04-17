@@ -1,9 +1,9 @@
 import "./reset.css";
 import React from "react";
-import Header from "./Components/Header/Header";
-import CharacterRating from "./Components/CharacterRating/CharacterRating";
+import Header from "./components/Header/Header";
+import CharacterRating from "./components/CharacterRating/CharacterRating";
 import { data } from "./constant/fma-data";
-import CharacterCards from "./Components/CharacterCards/CharacterCards";
+import CharacterCards from "./components/CharacterCards/CharacterCards";
 
 function App() {
   return (

@@ -1,9 +1,10 @@
 import React from "react";
 import "./characterRating.css";
-import CharacterRatingRow from "./CharacterRatingRow.jsx";
+import CharacterRatingRow from "./CharacterRatingRows.jsx";
 import { data } from "../../constant/fma-data.ts";
 
 function CharacterRating() {
+  const topFiveItems = data.sort((a, b) => b.votes - a.votes).slice(0, 5);
   return (
     <section id="character-ratings">
       <h4>Top Characters</h4>
@@ -16,7 +17,13 @@ function CharacterRating() {
           </tr>
         </thead>
         <tbody>
-          <CharacterRatingRow data={data} />
+          {topFiveItems.map((character, index) => (
+            <CharacterRatingRow
+              character={character}
+              index={index}
+              key={character.name}
+            />
+          ))}
         </tbody>
       </table>
     </section>
